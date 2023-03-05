@@ -108,12 +108,6 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Inventore aliquid omnis blanditiis laudantium deleniti cumque
-                eos in mollitia doloremque a voluptatum distinctio itaque
-                dolores corporis fugit, vel voluptas aperiam beatae.
-              </p>
               <a class="close-btn" data-modal-close>
                 <!--  <img src="./images/SVG/cruz.svg" alt="cruz" /> -->
                 <svg class="cross-icon">
@@ -124,6 +118,65 @@
                   ></use>
                 </svg>
               </a>
+              <form class="modal-form">
+                <h4 id="title-form">
+                  Deje sus datos, nos contactaremos con usted
+                </h4>
+                <label class="form-label">
+                  <span class="input-text">Nombre</span>
+                  <input
+                    class="form-input"
+                    name="username"
+                    type="text"
+                    placeholder="Example Name"
+                    minlength="4"
+                    required
+                  />
+                </label>
+                <label class="form-label">
+                  <span class="input-text">Teléfono</span>
+                  <input
+                    class="form-input"
+                    name="telefono"
+                    type="tel"
+                    placeholder="Phone number"
+                    minlength="4"
+                    required
+                  />
+                </label>
+                <label class="form-label">
+                  <span class="input-text">E-mail</span>
+                  <input
+                    class="form-input"
+                    name="email"
+                    type="email"
+                    placeholder="example@mail.com"
+                    required
+                  />
+                </label>
+                <label class="form-label">
+                  <span class="input-text">Comentarios</span>
+                  <textarea
+                    id="textarea-form"
+                    name="comentarios"
+                    rows="6"
+                    placeholder="Ingrese aquí sus comentarios..."
+                  ></textarea>
+                </label>
+                <label class="form-check">
+                  <input
+                    class="input-check"
+                    name="check"
+                    type="checkbox"
+                    required
+                  />
+                  <span class="input-text"
+                    >Estoy de acuerdo con el boletín informativo y acepto los
+                    Términos y Condiciones
+                  </span>
+                  <button class="form-btn" type="button">Enviar</button>
+                </label>
+              </form>
             </div>
           </div>
         </div>

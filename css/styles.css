@@ -1,5 +1,8 @@
-
-/* COMMON CODE FOR PAGES */
+/*
+----------------------------------------------------------------------------------
+                    ETIQUETAS GLOBALES 
+----------------------------------------------------------------------------------
+*/
 
 :root{
     --text-gray: #757575;
@@ -55,7 +58,16 @@ body{
     padding: 0;
 }
 
+nav {
+    display: flex;
+}
 
+
+/*
+----------------------------------------------------------------------------------
+                            CLASES GLOBALES
+----------------------------------------------------------------------------------
+*/
 
 
 /* BLOQUE CONTENEDOR */
@@ -94,18 +106,11 @@ body{
     border-bottom: 1px solid #a5a1a15b;
 }
 
-
-
-
-/* NAVEGATION BAR */
-
-nav{
-    display: flex;
-}
-
 .linea{
     display: flex;
 }
+
+/* NAVEGATION BAR */
 
 /* Webstudio */
 .web-studio{
@@ -285,7 +290,11 @@ nav{
 
 
 
-/* PAGE 1: index.html */
+/*
+----------------------------------------------------------------------------------
+PAGE 1: index.html
+----------------------------------------------------------------------------------
+*/
 
 .sec-1{
     padding-top: 200px;
@@ -342,7 +351,7 @@ nav{
     position: absolute;
     width: 528px;
     height: 581px;
-    padding: 2%;
+    padding: 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -350,14 +359,6 @@ nav{
     background-color: white;
     color: #212121;
     display: flex;
-}
-
-.modal > p{
-    position: absolute;
-    width: 70%;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 15%; /* 50% - (70% / 2) */
 }
 
 .close-btn{
@@ -388,6 +389,70 @@ nav{
     width: 15px;
     height: 15px;
     fill:black;
+}
+
+.modal-form{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#title-form{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.form-label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.input-text{
+    text-align: start;
+    margin-bottom: 4px;
+    color: #757575;
+}
+
+.form-input{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+#textarea-form{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-check{
+    text-align: left;
+    margin-top: 10px;
+}
+
+.input-check{
+    margin-right: 5px;
+}
+
+.form-btn{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 80px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #2196F3;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-btn:hover{
+    background: #1a8eee;
 }
 
 .sec-2{
@@ -588,7 +653,11 @@ nav{
 
 
 
-/* PAGE 2: portafolio.html */
+/*
+----------------------------------------------------------------------------------
+PAGE 2: portafolio.html
+----------------------------------------------------------------------------------
+*/
 
 .buttons-list{
     display: flex;
